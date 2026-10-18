@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bilim Markazi — o'quv markazi</title>
+<meta name="description" content="Ingliz tili, IELTS, Matematika va Dasturlash kurslari. Birinchi dars bepul.">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="web kurs.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container nav">
+    <a href="#bosh" class="logo"><i class="fa-solid fa-graduation-cap"></i> Bilim Markazi</a>
+    <nav id="menu" class="menu" aria-label="Asosiy menyu">
+      <a href="#bosh">Bosh sahifa</a><a href="#kurslar">Kurslar</a><a href="#biz">Biz haqimizda</a>
+      <a href="#jadval">Jadval</a><a href="#faq">Savollar</a><a href="#aloqa">Aloqa</a>
+    </nav>
+    <div class="actions">
+      <button id="theme" class="icon-btn" aria-label="Rejimni almashtirish"><i class="fa-solid fa-moon"></i></button>
+      <span id="authLinks" class="hide-sm"></span>
+      <button id="burger" class="icon-btn burger" aria-label="Menyu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== ASOSIY SAHIFA ===== -->
+<div id="view-main">
+<main>
+<section class="hero" id="bosh">
+  <div class="container hero-grid">
+    <div>
+      <p class="badge"><i class="fa-solid fa-circle"></i> Yangi guruhlarga qabul ochiq</p>
+      <h1>Bilim — kelajagingizga eng yaxshi sarmoya</h1>
+      <p class="lead">Tajribali ustozlar, kichik guruhlar va xalqaro sertifikatga tayyorlov. Birinchi dars bepul.</p>
+      <div class="hero-btns">
+        <a href="#royxat" class="btn">Ro'yxatdan o'tish</a>
+        <a href="#kurslar" class="btn ghost">Kurslarni ko'rish</a>
+      </div>
+    </div>
+    <aside class="card groups" aria-label="Yaqin guruhlar">
+      <h3>Yaqin boshlanadigan guruhlar</h3>
+      <ul>
+        <li><div><b>IELTS</b><span>27-oktabr · Du-Chor-Juma</span></div><em>4 joy</em></li>
+        <li><div><b>Ingliz tili (A2)</b><span>3-noyabr · Se-Pay-Sha</span></div><em>6 joy</em></li>
+        <li><div><b>Dasturlash</b><span>10-noyabr · Du-Chor-Juma</span></div><em>3 joy</em></li>
+      </ul>
+      <a href="#royxat" class="btn block">Joyni band qilish</a>
+    </aside>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="container stats-grid">
+    <div><b data-count="2500">0</b><span>bitiruvchi</span></div>
+    <div><b data-count="12">0</b><span>yo'nalish</span></div>
+    <div><b data-count="25">0</b><span>o'qituvchi</span></div>
+    <div><b data-count="9">0</b><span>yillik tajriba</span></div>
+  </div>
+</section>
+
+<section class="section" id="kurslar">
+  <div class="container">
+    <div class="head"><h2>Kurslarimiz</h2><p>Maqsadingizga mos yo'nalishni tanlang</p></div>
+    <div class="tools">
+      <div class="filters">
+        <button class="chip active" data-f="all">Hammasi</button>
+        <button class="chip" data-f="til">Tillar</button>
+        <button class="chip" data-f="fan">Aniq fanlar</button>
+        <button class="chip" data-f="it">IT</button>
+      </div>
+      <label class="search"><i class="fa-solid fa-magnifying-glass"></i><input id="search" type="search" placeholder="Kurs qidirish..." aria-label="Kurs qidirish"></label>
+    </div>
+    <div class="grid g3" id="courses">
+      <article class="card course" data-c="til" data-n="Ingliz tili"><i class="fa-solid fa-language"></i><h3>Ingliz tili</h3><p>Noldan yuqori darajagacha, suhbat amaliyoti bilan.</p><div class="meta"><span>6 oy · 3 marta/hafta</span><b>350 000 so'm</b></div><button class="enroll">Kursga yozilish</button></article>
+      <article class="card course" data-c="til" data-n="IELTS"><i class="fa-solid fa-earth-asia"></i><h3>IELTS</h3><p>Mock imtihonlar va shaxsiy tahlil bilan 7+ ball uchun.</p><div class="meta"><span>4 oy · 3 marta/hafta</span><b>450 000 so'm</b></div><button class="enroll">Kursga yozilish</button></article>
+      <article class="card course" data-c="til" data-n="Rus tili"><i class="fa-solid fa-comments"></i><h3>Rus tili</h3><p>Gapirish, yozish va grammatika bo'yicha amaliy kurs.</p><div class="meta"><span>5 oy · 3 marta/hafta</span><b>300 000 so'm</b></div><button class="enroll">Kursga yozilish</button></article>
+      <article class="card course" data-c="fan" data-n="Matematika"><i class="fa-solid fa-square-root-variable"></i><h3>Matematika</h3><p>Maktab dasturi va abituriyentlar uchun chuqur tayyorlov.</p><div class="meta"><span>8 oy · 3 marta/hafta</span><b>320 000 so'm</b></div><button class="enroll">Kursga yozilish</button></article>
+      <article class="card course" data-c="it" data-n="Dasturlash"><i class="fa-solid fa-code"></i><h3>Dasturlash</h3><p>Web, Python va real loyihalar ustida ishlash.</p><div class="meta"><span>7 oy · 3 marta/hafta</span><b>500 000 so'm</b></div><button class="enroll">Kursga yozilish</button></article>
+      <article class="card course" data-c="it" data-n="Kompyuter savodxonligi"><i class="fa-solid fa-laptop"></i><h3>Kompyuter savodxonligi</h3><p>Word, Excel va internetdan foydalanish asoslari.</p><div class="meta"><span>2 oy · 2 marta/hafta</span><b>250 000 so'm</b></div><button class="enroll">Kursga yozilish</button></article>
+    </div>
+    <p class="empty" id="empty" hidden>Hech narsa topilmadi. Boshqa so'z bilan qidirib ko'ring.</p>
+  </div>
+</section>
+
+<section class="section alt" id="biz">
+  <div class="container">
+    <div class="head"><h2>Nega aynan biz?</h2><p>O'qishni qulay va natijali qiladigan narsalar</p></div>
+    <div class="grid g3 why">
+      <div class="card"><i class="fa-solid fa-chalkboard-user"></i><h3>Tajribali ustozlar</h3><p>Kamida 5 yillik tajribaga ega, sertifikatli o'qituvchilar.</p></div>
+      <div class="card"><i class="fa-solid fa-user-group"></i><h3>Kichik guruhlar</h3><p>Guruhda 10–12 kishi: har bir o'quvchiga e'tibor beriladi.</p></div>
+      <div class="card"><i class="fa-solid fa-display"></i><h3>Zamonaviy xonalar</h3><p>Konditsioner, proyektor va qulay jihozlar.</p></div>
+      <div class="card"><i class="fa-solid fa-certificate"></i><h3>Sertifikat</h3><p>Kursni tugatganlarga markaz sertifikati beriladi.</p></div>
+      <div class="card"><i class="fa-brands fa-telegram"></i><h3>Onlayn yordam</h3><p>Materiallar va savol-javob Telegram guruhida.</p></div>
+      <div class="card"><i class="fa-solid fa-hand-holding-dollar"></i><h3>Qulay narx</h3><p>Oylik to'lov, ikkinchi kursga va birodarlarga chegirma.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="qabul">
+  <div class="container">
+    <div class="head"><h2>Qanday boshlash mumkin?</h2><p>To'rt qadamda o'qishni boshlang</p></div>
+    <ol class="steps">
+      <li><span>1</span><h3>Ro'yxatdan o'ting</h3><p>Saytda hisob yarating va kursni tanlang.</p></li>
+      <li><span>2</span><h3>Sinov darsi</h3><p>Birinchi darsga bepul qatnashing.</p></li>
+      <li><span>3</span><h3>Guruh tanlang</h3><p>Sizga qulay vaqt va darajani belgilaymiz.</p></li>
+      <li><span>4</span><h3>O'qishni boshlang</h3><p>Oylik to'lov bilan darslarni davom ettiring.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section alt" id="jadval">
+  <div class="container narrow-lg">
+    <div class="head"><h2>Dars jadvali</h2><p>Har bir kurs uchun ertalabki va kechki guruhlar mavjud</p></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Kurs</th><th>Kunlar</th><th>Vaqt</th><th>Davomiyligi</th></tr></thead>
+        <tbody>
+          <tr><td>Ingliz tili</td><td>Du-Chor-Juma</td><td>09:00 / 17:00</td><td>90 daqiqa</td></tr>
+          <tr><td>IELTS</td><td>Se-Pay-Sha</td><td>10:00 / 18:00</td><td>120 daqiqa</td></tr>
+          <tr><td>Rus tili</td><td>Du-Chor-Juma</td><td>11:00 / 16:00</td><td>90 daqiqa</td></tr>
+          <tr><td>Matematika</td><td>Se-Pay-Sha</td><td>14:00 / 17:00</td><td>90 daqiqa</td></tr>
+          <tr><td>Dasturlash</td><td>Du-Chor-Juma</td><td>15:00 / 18:30</td><td>120 daqiqa</td></tr>
+          <tr><td>Kompyuter savodxonligi</td><td>Se-Shan</td><td>10:00 / 15:00</td><td>90 daqiqa</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container narrow">
+    <div class="head"><h2>Ko'p so'raladigan savollar</h2></div>
+    <div class="q"><button aria-expanded="false">Birinchi dars bepulmi?<i class="fa-solid fa-plus"></i></button><div class="a"><p>Ha, sinov darsi bepul. Yoqmasa, to'lov qilmaysiz.</p></div></div>
+    <div class="q"><button aria-expanded="false">Guruhda nechta o'quvchi bor?<i class="fa-solid fa-plus"></i></button><div class="a"><p>Har bir guruhda 10–12 nafar o'quvchi bo'ladi.</p></div></div>
+    <div class="q"><button aria-expanded="false">To'lov qanday amalga oshiriladi?<i class="fa-solid fa-plus"></i></button><div class="a"><p>Oylik to'lov. Naqd, karta yoki Click/Payme orqali to'lash mumkin.</p></div></div>
+    <div class="q"><button aria-expanded="false">Sertifikat beriladimi?<i class="fa-solid fa-plus"></i></button><div class="a"><p>Ha, kursni muvaffaqiyatli tugatganlarga markaz sertifikati beriladi.</p></div></div>
+    <div class="q"><button aria-expanded="false">Dars qoldirib ketsam nima bo'ladi?<i class="fa-solid fa-plus"></i></button><div class="a"><p>Sababli qoldirilgan mavzuni ustoz bilan qo'shimcha o'tib olasiz.</p></div></div>
+    <div class="q"><button aria-expanded="false">Kursni qanday tanlayman?<i class="fa-solid fa-plus"></i></button><div class="a"><p>Aloqa bo'limida ariza qoldiring, menejer darajangizni aniqlab, mos guruhni tavsiya qiladi.</p></div></div>
+  </div>
+</section>
+
+<section class="section alt" id="aloqa">
+  <div class="container contact">
+    <div class="info">
+      <h2>Savolingiz bormi?</h2>
+      <p>Ariza qoldiring, 1 soat ichida qo'ng'iroq qilamiz.</p>
+      <ul>
+        <li><i class="fa-solid fa-location-dot"></i> [MANZIL]</li>
+        <li><i class="fa-solid fa-phone"></i> [TELEFON]</li>
+        <li><i class="fa-solid fa-clock"></i> Du–Sha: 08:00–20:00</li>
+      </ul>
+      <div class="map">Google Maps iframe uchun joy</div>
+    </div>
+    <form id="form" class="card form" novalidate>
+      <label>Ismingiz<input name="name" placeholder="Ism familiya" autocomplete="name"></label>
+      <label>Telefon<input name="phone" type="tel" placeholder="+998 90 123 45 67" autocomplete="tel"></label>
+      <label>Kurs<select name="course" id="course"></select></label>
+      <label>Xabar<textarea name="msg" rows="3" placeholder="Savolingiz bo'lsa yozing"></textarea></label>
+      <p class="err" id="err" role="alert"></p>
+      <button class="btn" type="submit">Ariza yuborish</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container foot">
+    <div><a href="#bosh" class="logo"><i class="fa-solid fa-graduation-cap"></i> Bilim Markazi</a><p>Sifatli ta'lim — ishonchli kelajak.</p></div>
+    <div class="links"><a href="#kurslar">Kurslar</a><a href="#jadval">Jadval</a><a href="#faq">Savollar</a><a href="#aloqa">Aloqa</a></div>
+    <div class="social"><a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></div>
+  </div>
+  <p class="copy">© 2026 Bilim Markazi. Barcha huquqlar himoyalangan.</p>
+</footer>
+</div>
+
+<!-- ===== KIRISH / RO'YXATDAN O'TISH SAHIFASI ===== -->
+<section id="view-auth" class="auth" hidden>
+  <div class="auth-box card">
+    <a href="#bosh" class="back"><i class="fa-solid fa-arrow-left"></i> Bosh sahifa</a>
+    <div class="tabs" role="tablist">
+      <button role="tab" id="tab-login" data-tab="login">Kirish</button>
+      <button role="tab" id="tab-reg" data-tab="reg">Ro'yxatdan o'tish</button>
+    </div>
+
+    <form id="loginForm" novalidate>
+      <h2>Qaytganingiz bilan!</h2>
+      <label>Telefon<input name="phone" type="tel" placeholder="+998 90 123 45 67" autocomplete="tel"></label>
+      <label>Parol<span class="pw"><input name="pass" type="password" autocomplete="current-password"><button type="button" class="eye" aria-label="Parolni ko'rsatish"><i class="fa-solid fa-eye"></i></button></span></label>
+      <p class="err" role="alert"></p>
+      <button class="btn block" type="submit">Kirish</button>
+      <p class="alt-link">Hisobingiz yo'qmi? <a href="#royxat">Ro'yxatdan o'ting</a></p>
+    </form>
+
+    <form id="regForm" novalidate>
+      <h2>Hisob yarating</h2>
+      <label>Ism familiya<input name="name" placeholder="Ism familiya" autocomplete="name"></label>
+      <label>Telefon<input name="phone" type="tel" placeholder="+998 90 123 45 67" autocomplete="tel"></label>
+      <label>Parol<span class="pw"><input name="pass" type="password" autocomplete="new-password"><button type="button" class="eye" aria-label="Parolni ko'rsatish"><i class="fa-solid fa-eye"></i></button></span></label>
+      <div class="meter" aria-hidden="true"><i></i></div><small id="meterText">Kamida 6 ta belgi</small>
+      <label>Parolni tasdiqlang<input name="pass2" type="password" autocomplete="new-password"></label>
+      <p class="err" role="alert"></p>
+      <button class="btn block" type="submit">Ro'yxatdan o'tish</button>
+      <p class="alt-link">Hisobingiz bormi? <a href="#kirish">Kirish</a></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== SHAXSIY KABINET ===== -->
+<section id="view-cabinet" class="cabinet" hidden>
+  <div class="container">
+    <a href="#bosh" class="back"><i class="fa-solid fa-arrow-left"></i> Bosh sahifa</a>
+    <div class="card profile">
+      <div class="ava" id="ava"></div>
+      <div><h2 id="cabName"></h2><p id="cabPhone"></p></div>
+      <button class="btn ghost" id="logout"><i class="fa-solid fa-right-from-bracket"></i> Chiqish</button>
+    </div>
+    <h3 class="sub">Mening kurslarim</h3>
+    <div id="myCourses" class="grid g3"></div>
+    <p class="empty" id="noCourses" hidden>Hali kursga yozilmagansiz. <a href="#kurslar">Kurslarni ko'rish</a></p>
+  </div>
+</section>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<a href="https://t.me/" class="tg" aria-label="Telegram orqali yozish" target="_blank" rel="noopener"><i class="fa-brands fa-telegram"></i></a>
+<button id="top" class="top" aria-label="Yuqoriga"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="web kurs.js"></script>
+</body>
+</html>
